@@ -1,7 +1,8 @@
 const { User } = require('../models');
 const { CustomException } = require('../utils');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
+
 const satelize = require('satelize');
 const { JWT_SECRET, NODE_ENV } = process.env;
 const saltRounds = 10;
